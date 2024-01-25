@@ -3,7 +3,7 @@ package utils;
 
 import java.util.List;
 
-public abstract class ObjectUtils {
+public interface ObjectUtils {
 	
 	public static Boolean isNotNull(Object... objects) {
 		for (Object object : objects) {
@@ -18,10 +18,6 @@ public abstract class ObjectUtils {
 		for (Object object : objects) {
 			if (object != null) {
 				return false;
-			}
-			
-			if (object instanceof Iterable<?>) {
-				
 			}
 		}
 		
