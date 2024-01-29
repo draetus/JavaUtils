@@ -15,5 +15,9 @@ public interface DateUtils {
 	public static boolean isBeforeOrEqualsNow(LocalDate date) {
 		return LocalDate.now().isBefore(date) || LocalDate.now().isEqual(date);
 	}
+	
+	public static String formatLocalDateToString(LocalDate date) {
+		return date.format(DATE_FORMATTER);
+	}
     
 }
